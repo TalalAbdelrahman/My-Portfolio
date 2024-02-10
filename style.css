@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    /* -------colors------ */
+    --bg-color: #09090f;
+    --bg2-color: #15151c;
+    --text-color: #fff;
+    --main-color: #a6bbc4;
+    /* -------font size ------- */
+    --h1-size: 54px;
+    --h2-size: 37px;
+    --p-size:  17px;
+}
+
+.light-mode{
+    --bg-color: #eaeaf0ba;
+    --bg2-color: #c6c6fb;
+    --text-color: #000;
+    --main-color: #006466;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+p{
+    font-size: var(--p-size);
+    line-height: 140%;
+    color: var(--text-color);
+    font-weight: lighter;
+}
+        /* ----------- Start Home Page -------------- */
+.Home{
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-color) ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+/* ----------- Start Nav bar -------------- */
+.nav{
+    background-color: var(--bg2-color);
+    color: var(--text-color);
+    width: 100%;
+    padding: 10px 15%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10001;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 18px;
+}
+.logo img{
+    width: 35px;
+    border-radius: 50%;
+    font-size: 24px;
+    margin-right: 12px;
+}
+.nav ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav ul li a{
+    font-size: var(--p-size);
+    color: var(--text-color);
+    border-bottom: 2px solid transparent;
+    transition: 0.4s all;
+}
+
+.nav ul li a:hover{
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    transition: 0.4s all;
+
+}
+
+.fa-grip-lines-vertical{
+    margin: 0 20px;
+}
+
+.fa-sun:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.menu-links{
+    font-size: 24px;
+    display: none;
+}
+/* ----------- End Nav bar -------------- */
+
+
+/* ---------- Start Home Page Content --------- */
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.content h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: var(--h1-size);
+    font-weight: 900;
+    color: var(--text-color);
+    
+}
+
+.content h1 span{
+    color: var(--main-color);
+}
+.content p{
+    margin-top: 5px;
+    font-size: 21px;
+}
+.btn{
+    margin-top: 50px;
+}
+
+.btn .dd-cv{
+    color: var(--main-color);
+    padding: 9px 17px;
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    border-radius: 6px;
+    transition: 0.7s all;
+}
+
+.btn .mail{
+    margin-right: 15px;
+    color: var(--bg-color);
+    padding: 9px 17px;
+    background-color: var(--main-color);
+    border-radius: 6px;
+    transition: 0.7s all;
+}
+
+.btn a:hover{
+    transition: 0.7s all;
+    box-shadow: 0px 0px 15px var(--main-color);
+}
+
+.fa-envelope{
+    padding-right: 3px;
+}
+
+.sociel-media {
+    position: absolute;
+    bottom: 20px;
+    left: 70px;
+}
+
+.sociel-media a{
+    font-size: 24px;
+    display: block;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+}
+
+.sociel-media a:hover{
+    color:var(--main-color);
+    transition: 0.5s ease;
+}
+
+        /* ------------ End Home Page Content ------------ */
+    /* --------------------- End Home Page ----------------------------- */
+
+    /* ------------------- Start About Page ----------- */
+.About-Page{
+    height: 100vh;
+    width: 100%;
+    background: var(--bg-color);
+}
+
+/* ------- Start about page 'header' ---------- */
+.About-Page .header {
+    padding-top: 80px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.About-Page .header p, .projects-page .header p{
+    letter-spacing: 3px;
+}
+
+.About-Page .header h1 {
+    text-transform: uppercase;
+    font-size: var(--h1-size);
+}
+/* ------- End about page 'header' ---------- */
+
+/* ------- Start about page 'content' ---------- */
+.about-content{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10%;
+    padding: 40px 20%;
+    align-items: center;
+}
+
+.about-image{
+    width: 300px;
+    border-radius: 15px;
+}
+
+.about-sq{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.exp-sq, .pro-sq{
+    background-color: var(--bg2-color);
+    color: var(--text-color);
+    padding: 24px 34px;
+    width: 100%;
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid var(--main-color);
+}
+
+.pro-sq a{
+    color: var(--main-color);
+    padding-bottom: 1px;
+}
+/* ------- End about page 'content' ---------- */
+/* ------------------------ End About Page ----------------------- */
+
+
+/* ------------------------ Start Services Page ----------------------- */
+.services-page{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.services-page .header h1{
+    padding-top: 80px;
+    font-size: var(--h1-size);
+    text-align: center;
+}
+
+.services-content .sq-content{
+    display: flex;
+    gap: 20px;
+    padding: 100px 18% 0;   
+}
+
+.services-content .sq1, .sq2{
+    width: 100%;
+    padding: 26px 34px;
+    border: 2px solid var(--main-color);
+    border-radius: 30px;
+    background-color: var(--bg2-color);
+}
+
+.sq h1{
+    color: var(--main-color);
+}
+
+.services-sq-p{
+    color: var(--main-color);
+    font-size: 14px;
+}
+
+.services-content footer{
+    padding: 40px 18%;
+}
+
+.fotter-services-content{
+    background-color: var(--bg2-color);
+    padding: 24px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid var(--main-color);
+    border-radius: 25px;
+}
+
+.fotter-services-content p{
+    color: var(--main-color);
+    font-size: 16px;
+}
+
+.btn-fotter-services a{
+    color: var(--text-color);
+    padding: 12px 16px;
+    border-radius: 15px;
+    margin-right: 10px;
+    font-weight: 600;
+    border: 2px solid var(--bg-color);
+    transition: 0.7s all;
+}
+
+.btn-fotter-services a:hover{
+    transition: 0.7s all;
+    background-color: var(--bg-color);
+    color: var(--main-color);
+}
+/* ------------------------ End Services Page ----------------------- */
+
+
+/* ------------------------ Start Projects Page ----------------------- */
+.projects-page {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.projects-page .header{
+    text-align: center;
+    padding-top: 80px;
+}
+
+.projects-page h1{
+    font-size: var(--h1-size);
+}
+.projects-page img{
+    width: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    padding-bottom: 8px;
+}
+
+.projects-content{
+    padding: 80px 18%;
+}
+.projects-sq{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.pro-sq1, .pro-sq2, .pro-sq3{
+    padding: 40px 38px;
+    background-color: var(--bg2-color);
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+}
+
+.projects-sq h3{
+    margin-bottom: 22px;
+}
+
+.pro-btn{
+    margin-left: 8px;
+    padding: 10px 14px;
+    border: 2px solid var(--bg-color);
+    color: var(--text-color);
+    font-size: var(--p-size);
+    border-radius: 15px;
+    transition: 0.7s all;
+}
+
+.pro-btn:hover{
+    color: var(--main-color);
+    transition: 0.7s all;
+    background-color: var(--bg-color);
+}
+/* ------------------------ End Projects Page ----------------------- */
+
+
+
+/* ------------------------ Start Contact Page ----------------------- */
+.contact-page{
+    width: 100%;
+    height: 90vh;
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--text-color);
+}
+
+.left-contact p{
+    font-size: var(--p-size);
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.left-contact h1{
+    font-size: var(--h1-size);
+    line-height: 140%;
+    margin-bottom: 10px;
+}
+
+.left-contact a{
+    font-size: 26px;
+    margin-right: 10px;
+    color: var(--text-color);
+}
+
+form{
+    display: flex;
+    flex-flow: column;
+    gap: 12px;
+}
+
+.right-contact .right-contact-inputs{
+    background:  var(--bg2-color);
+    border: none;
+    font-weight: bolder;
+    color: var(--text-color);
+    outline: none;
+    border-radius: 10px;
+    padding: 12px 170px 12px 12px;
+}
+
+.right-contact .right-contact-inputs:focus{ 
+    border: 2px solid var(--main-color);
+}
+
+.right-contact textarea {
+    height: 120px;
+    border-radius: 20px;
+}
+
+.right-contact form button i {
+    padding-left: 6px;
+}
+
+.right-contact form button{
+    border-radius: 20px;
+    height: 40px;
+    width: 120px;
+    background-color: transparent;
+    border: 2px solid var(--bg2-color);
+    color: var(--text-color);
+    transition: 0.7s all;
+    font-size: var(--p-size);
+}
+
+.right-contact form button:hover{
+    background-color: var(--bg2-color);
+}
+/* ------------------------ End Contact Page ----------------------- */
+
+
+/* ------------------- Copyright fotter ---------------  */
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    width: 100%;
+    background-color: var(--bg2-color);
+}
+
+@media screen and (max-width : 1024px){
+
+    .Home,.About-Page,.services-page,.projects-page{
+        height: 100vw;
+        width: 100%;
+    }
+
+    .copyright{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 6vh;
+            width: 100%;
+            background-color: var(--bg2-color);
+        }
+    .nav{
+        padding: 7px 8%;
+    }
+
+    :root{
+        --h1-size: 40px;
+        --h2-size: 37px;
+        --p-size:  17px;
+    }
+
+    .content p{
+        font-size: 16px;
+    }
+
+    .about-content{
+        padding: 110px 8% 0;
+    }
+    
+    .about-image{
+        width: 250px;
+    }
+
+    .services-content .sq-content{
+        padding: 100px 8% 0;   
+    }
+
+    .services-content footer{
+        padding: 15px 8% 0;
+    }
+    
+    .fotter-services-content{
+        padding: 24px 25px ;
+        display: flex;
+        gap: 29px;
+        align-items: center;
+        height: 120px;
+    }
+    
+    .fotter-services-content p{
+        color: var(--main-color);
+        font-size: 16px;
+    }
+    
+    .btn-fotter-services {
+        display: flex;     
+    }
+
+    .services-content .sq1, .sq2{
+            padding: 20px 20px;
+    }
+
+    .projects-sq{
+        gap: 25px;
+    }
+    .pro-sq1, .pro-sq2, .pro-sq3{
+        padding: 20px 20px;
+        background-color: var(--bg2-color);
+        border: 2px solid var(--main-color);
+        border-radius: 20px;
+    }
+
+    .services-content footer{
+        padding: 40px 8% 0;
+    }
+
+    .projects-content{
+        display: flex;
+        gap: 20px;
+        padding: 80px 10%;
+    }
+}
